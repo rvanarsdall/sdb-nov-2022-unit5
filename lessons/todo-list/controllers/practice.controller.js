@@ -16,4 +16,9 @@ router.post("/greeting", (req, res) => {
   const { firstName } = req.body;
   res.send("Good Afternoon " + firstName);
 });
+
+// ? If the route doesn't exist
+router.get("*", (req, res) => {
+  res.status(404).send("I couldn't find what you were looking for")
+})
 module.exports = router;

@@ -37,3 +37,26 @@ In our `app.js` we need to have this line of code:
 ```js
 app.use(express.json());
 ```
+## MVC
+
+- Stands for Model View Controller
+- Architecture pattern that helps our Separation of Concerns
+- View - browser, Postman, curl, etc. Applications that interface with the server
+- Controller - part of server application which handles logic
+- Model - database schematic
+
+## CRUD
+
+- Create (POST & GET) - creating entry based on request content
+- Read (GET) - reading entry based on request query
+- Update (PUT) - updating exisiting entry based on request
+- Delete (DELETE) - deleting existing entry based on request query
+
+File structure review
+
+``` . ``` means existing folder
+``` ../ ``` means one folder back
+
+> These can be chained, for ex:
+
+``` ../.. ``` moves you two folders back up the tree
