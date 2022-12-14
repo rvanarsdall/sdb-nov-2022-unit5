@@ -14,7 +14,7 @@ function logTime(req, res, next) {
 }
 
 app.use(express.json());
-app.use(express.urlencoded())
+app.use(express.urlencoded({extended: true}))
 app.use(cors())
 // This will serve the static html page that is inside the public folder
 app.use(express.static(`${__dirname}/public`));
